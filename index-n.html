@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<style>
+		html,body
+		{
+			margin: 0;
+			padding: 0;
+			background: #2C2F34;
+		}
+		.content
+		{
+			width: 100%;
+			height: auto;
+			margin: auto;
+			max-width: 1200px;
+			padding: 40px 0 40px 0;
+		}
+		.back
+		{
+			width: 100%;
+			height: calc(100vh);
+			background: url(https://d1dxs113ar9ebd.cloudfront.net/225batonrouge/2017/09/Balloons-iStock-471670719-1-e1506004504223.jpg) no-repeat 50% 50%;
+			background-size: cover;
+			position: relative;
+		}
+		h1
+		{
+			font-family: Poppins;
+			color: #fff;
+		}
+		p
+		{
+			font-family: Poppins;
+			line-height: 30px;
+			color: #fff;
+			font-weight: lighter;
+		}
+		.back img
+		{
+			width: 45%;
+			position: absolute;
+			top: 0;
+			left: 40%;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+<div class="back">
+	<img src="http://purepng.com/public/uploads/large/purepng.com-air-balloonair-balloonballoonhot-air-balloontransport-1701528448156eyigm.png">
+</div>
+<div class="content">
+	<h1>HEADING</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<script>
+	$(window).scroll(function()
+	{
+		var scrollPos = $(this).scrollTop();
+		$(".back").css({
+			'background-size' : 100 + scrollPos + '%'
+		});
+	});
+</script>
+</body>
+</html>
